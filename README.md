@@ -133,3 +133,9 @@ cd frontend && npm test
 | Backend | Node.js 18+, Express 5, express-validator, JWT, bcryptjs |
 | Database | PlanetScale (MySQL-compatible serverless DB) |
 | DB Driver | mysql2 / @planetscale/database |
+| Despliegue | Docker, Docker Compose, Render |
+
+## 🌐 Despliegue
+El sistema se encuentra desplegado y funcionando en la nube con uso de **Render** y **Docker**:
+- **Frontend:** https://restaurant-frontend-xcuz.onrender.com
+- **Backend (API):** https://restaurant-reservation-system-2ki2.onrender.com
