@@ -8,6 +8,9 @@ const { apiLimiter, authLimiter } = require('./middleware/rateLimiter');
 
 const app = express();
 
+// Required behind Render/Cloudflare proxies so rate limiting identifies client IPs correctly.
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(cors({
   origin: (process.env.CORS_ORIGIN || 'http://localhost:5173').split(','),
